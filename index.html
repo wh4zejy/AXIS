@@ -3,211 +3,244 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AXIS a brighter mind</title>
-<meta name="description" content="AXIS a brighter mind. Daily probiotic gummies that support the gut-brain axis.">
+<title>AXIS Vita · AXIS a brighter mind</title>
+<meta name="description" content="AXIS Vita probiotic powder. Gut health, mental clarity, daily balance. 10 single-serve packets in five flavors plus flavorless.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Tenor+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
 <style>
   /* ===== EDIT YOUR BRAND COLORS HERE ===== */
   :root{
-    --cream:#f7f3ec;
-    --white:#fffdf9;
-    --peach:#f9dfcc;
-    --peach-soft:#fcefe4;
-    --orange:#e39a66;      /* logo orange */
-    --lavender:#e6defa;
-    --lavender-soft:#f3effc;
-    --lilac:#b7a2ea;
-    --purple:#5c2f93;      /* logo purple */
-    --ink:#3b2a5c;
-    --muted:#7a6c8f;
-    --mint:#dcefe6;
-    --line:#e7dfd3;
-    --radius:24px;
-    --shadow:0 18px 40px -20px rgba(92,47,147,.28);
+    --cream:#faf6f1;
+    --white:#fffdfa;
+    --lavender:#ece4f8;
+    --lavender-mid:#d8caf1;
+    --purple:#6b4aa8;
+    --purple-deep:#4a3381;
+    --coral:#ef8b62;
+    --peach:#fcdcc8;
+    --pink:#f9d3dd;
+    --mint:#ddf0d2;
+    --butter:#fbe8bf;
+    --ink:#40305e;
+    --muted:#7d7092;
+    --line:#ebe2d8;
+    --radius:26px;
+    --shadow:0 20px 44px -24px rgba(74,51,129,.35);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:"Jost",system-ui,sans-serif;font-weight:300;background:var(--cream);color:var(--ink);line-height:1.65;overflow-x:hidden}
   img{max-width:100%;display:block}
   a{color:inherit}
-  .display{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.05;letter-spacing:-.01em}
-  .display em{font-style:italic;color:var(--purple)}
-  .wordmark{font-family:"Tenor Sans",sans-serif;letter-spacing:.32em;color:var(--purple)}
   .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-  .btn{display:inline-block;font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:13px;text-decoration:none;padding:16px 32px;border-radius:999px;background:var(--purple);color:var(--white);border:1px solid var(--purple);transition:all .25s;cursor:pointer;font-family:inherit}
-  .btn:hover{background:var(--ink);transform:translateY(-2px);box-shadow:var(--shadow)}
+  .axis{font-family:"Marcellus",serif;color:var(--purple);letter-spacing:.06em;line-height:1}
+  .vita{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--coral);line-height:1}
+  .serif{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.08}
+  .script{font-family:"Caveat",cursive;font-weight:500;color:var(--coral);line-height:1.1}
+  .caps{text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:400}
+  .star{color:var(--coral)}
+  .btn{display:inline-block;letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:400;text-decoration:none;padding:16px 32px;border-radius:999px;background:var(--purple);color:var(--white);border:1px solid var(--purple);transition:all .25s;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--purple-deep);transform:translateY(-2px);box-shadow:var(--shadow)}
   .btn.alt{background:transparent;color:var(--purple)}
   .btn.alt:hover{background:var(--white)}
-  .grad-text{background:linear-gradient(90deg,var(--orange),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
 
-  .announce{background:linear-gradient(90deg,var(--peach),var(--lavender));text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:10px 16px;color:var(--ink);font-weight:400}
+  .announce{background:linear-gradient(90deg,var(--peach),var(--pink),var(--lavender),var(--mint),var(--butter));text-align:center;padding:10px 16px;color:var(--ink)}
 
-  nav{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-  .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-  .logo svg{width:40px;height:40px}
-  .logo .wordmark{font-size:22px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .logo svg{width:38px;height:38px}
+  .logo .axis{font-size:24px;letter-spacing:.14em}
+  .logo .vita{font-size:24px;margin-left:2px}
   .links{display:flex;gap:30px;align-items:center}
-  .links a{text-decoration:none;font-size:14px;letter-spacing:.06em}
+  .links a{text-decoration:none;font-size:14px;letter-spacing:.05em}
   .links a:not(.btn):hover{color:var(--purple)}
-  .links .btn{padding:11px 22px;font-size:12px}
+  .links .btn{padding:11px 22px}
   .cart-count{display:inline-block;margin-left:6px;background:var(--peach);color:var(--ink);border-radius:999px;padding:0 8px;font-size:11px}
   .menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--purple)}
 
   /* hero */
   .hero{position:relative;overflow:hidden;background:
-      radial-gradient(circle at 15% 20%,var(--peach) 0,transparent 45%),
-      radial-gradient(circle at 85% 70%,var(--lavender) 0,transparent 50%),
+      radial-gradient(circle at 8% 15%,var(--peach) 0,transparent 40%),
+      radial-gradient(circle at 92% 25%,var(--lavender-mid) 0,transparent 42%),
+      radial-gradient(circle at 70% 95%,var(--pink) 0,transparent 40%),
       var(--cream)}
-  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:80px;padding-bottom:110px}
-  .kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
-  .hero h1{font-size:clamp(52px,7.5vw,96px)}
-  .hero h1 .wordmark{display:block;font-size:.62em;letter-spacing:.3em;margin-bottom:10px}
-  .hero p{font-size:19px;max-width:470px;margin:26px 0 36px;color:var(--muted)}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding-top:70px;padding-bottom:90px}
+  .hero .caps{color:var(--purple)}
+  .hero h1{margin:16px 0 6px}
+  .hero h1 .axis{display:block;font-size:clamp(70px,10vw,128px);font-weight:400}
+  .hero h1 .vita{display:block;font-size:clamp(60px,8.5vw,108px);margin-top:-4px}
+  .tagline{font-family:"Jost";font-weight:400;letter-spacing:.14em;font-size:clamp(17px,2vw,22px);color:var(--purple)}
+  .hero p.lede{font-size:18px;max-width:470px;margin:22px 0 30px;color:var(--muted)}
   .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:420px}
-  .halo{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,var(--white) 0,var(--peach-soft) 45%,var(--lavender) 100%);filter:blur(2px);animation:breathe 7s ease-in-out infinite}
-  @keyframes breathe{50%{transform:scale(1.06)}}
-  .orbit{position:absolute;width:460px;height:460px;animation:turn 40s linear infinite}
-  @keyframes turn{to{transform:rotate(360deg)}}
-  .jar{position:relative;z-index:2;width:250px;filter:drop-shadow(0 30px 30px rgba(92,47,147,.22))}
-  .badge{position:absolute;z-index:3;top:40px;right:6%;background:var(--white);border-radius:999px;padding:12px 18px;box-shadow:var(--shadow);font-size:13px;letter-spacing:.06em}
-  .badge b{font-family:"Cormorant Garamond";font-size:22px;color:var(--purple);font-weight:600;margin-right:4px}
+  .hero .script.note{font-size:30px;margin-top:28px;transform:rotate(-4deg);display:inline-block}
+  .hero-art{position:relative}
+  .hero-art .frame{border-radius:34px;overflow:hidden;box-shadow:var(--shadow);background:var(--white)}
+  .hero-art .frame img{width:100%}
+  .hero-art .float{position:absolute;bottom:-26px;left:-34px;width:46%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:6px solid var(--white);transform:rotate(-4deg)}
+  .hero-art .script{position:absolute;top:-34px;right:-6px;font-size:28px;transform:rotate(6deg);color:var(--purple)}
 
-  .marquee{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0}
-  .marquee-track{display:inline-block;animation:scroll 32s linear infinite}
-  .marquee span{font-family:"Cormorant Garamond";font-style:italic;font-size:26px;margin:0 22px;color:var(--ink)}
-  .marquee span.star{color:var(--orange);font-style:normal;font-size:18px}
-  @keyframes scroll{to{transform:translateX(-50%)}}
+  /* benefits */
+  .benefits{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .benefits .wrap{display:grid;grid-template-columns:repeat(3,1fr);padding-top:46px;padding-bottom:46px}
+  .benefit{text-align:center;padding:0 24px}
+  .benefit + .benefit{border-left:1px solid var(--line)}
+  .icon{width:74px;height:74px;border:1.5px solid var(--purple);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--purple);margin-bottom:14px}
+  .icon svg{width:38px;height:38px}
+  .benefit h3{font-size:14px;letter-spacing:.24em;text-transform:uppercase;font-weight:400;color:var(--purple);margin-bottom:6px}
+  .benefit p{color:var(--muted)}
 
-  section{padding:110px 0}
-  .eyebrow{display:inline-block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--purple);margin-bottom:16px}
-  .eyebrow::before{content:"✦ ";color:var(--orange)}
-  h2.display{font-size:clamp(38px,5.2vw,62px);margin-bottom:18px}
-  .center{text-align:center}
-  .sub{font-size:18px;max-width:600px;margin:0 auto 56px;color:var(--muted)}
+  section{padding:100px 0}
+  .head{text-align:center;margin-bottom:54px}
+  .head .caps{color:var(--purple)}
+  .head h2{font-size:clamp(40px,5.4vw,64px);margin:12px 0 10px}
+  .head p{font-size:18px;max-width:600px;margin:0 auto;color:var(--muted)}
+  .head .script{font-size:30px;display:block;margin-top:6px}
+
+  /* featured variety */
+  .featured{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:0;background:linear-gradient(120deg,var(--lavender),var(--peach));border-radius:34px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:34px}
+  .featured img{width:100%;height:100%;object-fit:cover}
+  .featured .info{padding:44px}
+  .featured h3{font-size:46px}
+  .featured ul{list-style:none;margin:18px 0 24px;columns:2;color:var(--ink)}
+  .featured li::before{content:"✦ ";color:var(--coral)}
+  .pill{display:inline-block;background:var(--white);border-radius:999px;padding:5px 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--purple)}
 
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-  .card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s}
+  .card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-8px)}
-  .card-top{height:270px;display:flex;align-items:center;justify-content:center;position:relative}
-  .card-top .mini-jar{width:140px;filter:drop-shadow(0 18px 18px rgba(92,47,147,.18))}
-  .tag{position:absolute;top:18px;left:18px;background:var(--white);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
-  .card-body{padding:26px 26px 28px}
-  .card-body h3{font-family:"Cormorant Garamond";font-weight:500;font-size:30px;line-height:1.1;margin-bottom:6px}
-  .card-body p{margin-bottom:20px;color:var(--muted)}
-  .price-row{display:flex;align-items:center;justify-content:space-between}
-  .price{font-family:"Cormorant Garamond";font-size:26px;font-weight:600;color:var(--purple)}
-  .add{background:var(--lavender);color:var(--purple);border:0;border-radius:999px;padding:11px 20px;cursor:pointer;font-family:inherit;font-size:12px;letter-spacing:.1em;text-transform:uppercase;transition:all .2s}
+  .card .photo{aspect-ratio:4/4.4;overflow:hidden}
+  .card .photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .card:hover .photo img{transform:scale(1.04)}
+  .card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+  .card-body h3{font-size:30px}
+  .card-body .script{font-size:24px;margin:2px 0 8px}
+  .card-body small{color:var(--muted);letter-spacing:.06em}
+  .price-row{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:18px}
+  .price{font-family:"Cormorant Garamond";font-size:28px;font-weight:600;color:var(--purple)}
+  .add{background:var(--lavender);color:var(--purple);border:0;border-radius:999px;padding:11px 20px;cursor:pointer;font-family:inherit;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:all .2s}
   .add:hover{background:var(--purple);color:var(--white)}
 
-  .why{background:linear-gradient(180deg,var(--lavender-soft),var(--peach-soft))}
-  .features{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .feature{background:var(--white);border-radius:var(--radius);padding:34px 24px;text-align:center;box-shadow:var(--shadow)}
-  .feature .big{font-family:"Cormorant Garamond";font-size:58px;font-weight:500;line-height:1}
-  .feature h4{font-weight:500;font-size:14px;letter-spacing:.16em;text-transform:uppercase;margin:12px 0 8px}
-  .feature p{color:var(--muted);font-size:15px}
+  /* ritual */
+  .ritual{background:linear-gradient(180deg,var(--cream),var(--lavender))}
+  .ritual .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .ritual .photo{position:relative;border-radius:34px;overflow:hidden;box-shadow:var(--shadow)}
+  .ritual .photo img{width:100%}
+  .steps{list-style:none;counter-reset:s}
+  .steps li{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--lavender-mid)}
+  .steps li::before{counter-increment:s;content:"0" counter(s);font-family:"Cormorant Garamond";font-weight:600;font-size:42px;line-height:1;color:var(--coral)}
+  .steps h3{font-size:28px;margin-bottom:4px}
+  .steps p{color:var(--muted)}
+  .ritual .head{text-align:left;margin-bottom:20px}
+  .ritual .head p{margin:0}
 
-  .axis-diagram{display:flex;align-items:center;justify-content:center;gap:18px;margin:-20px auto 56px;flex-wrap:wrap}
-  .node{background:var(--white);border-radius:999px;padding:12px 26px;font-family:"Cormorant Garamond";font-size:24px;box-shadow:var(--shadow)}
-  .node.gut{color:var(--orange)} .node.brain{color:var(--purple)}
-  .link{width:120px;height:2px;background:linear-gradient(90deg,var(--orange),var(--purple));position:relative}
-  .link::after{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);background:var(--cream);color:var(--purple);padding:0 6px;font-size:14px}
+  /* flavorless spotlight */
+  .flavorless .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .flavorless .photo{border-radius:34px;overflow:hidden;box-shadow:var(--shadow);background:#f3f2f6}
+  .flavorless .big-script{font-size:clamp(44px,5.5vw,64px);color:var(--purple);transform:rotate(-3deg);margin:14px 0 22px}
+  .flavorless p{color:var(--muted);font-size:18px;max-width:460px;margin-bottom:28px}
 
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;counter-reset:s}
-  .step{padding:36px 30px;border-radius:var(--radius);background:var(--white);border:1px solid var(--line)}
-  .step::before{counter-increment:s;content:"0" counter(s);display:block;font-family:"Cormorant Garamond";font-style:italic;font-size:44px;line-height:1;margin-bottom:14px;background:linear-gradient(90deg,var(--orange),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .step h4{font-family:"Cormorant Garamond";font-weight:500;font-size:28px;margin-bottom:8px}
-  .step p{color:var(--muted)}
-
+  /* reviews */
   .reviews{background:var(--white)}
   .review{background:var(--cream);border-radius:var(--radius);padding:32px}
-  .stars{color:var(--orange);font-size:16px;letter-spacing:4px;margin-bottom:14px}
-  .review p{font-family:"Cormorant Garamond";font-style:italic;font-size:22px;line-height:1.35;margin-bottom:18px}
+  .stars{color:var(--coral);font-size:16px;letter-spacing:4px;margin-bottom:14px}
+  .review p{font-family:"Cormorant Garamond";font-size:23px;font-weight:500;line-height:1.35;margin-bottom:18px}
   .review b{display:block;font-weight:500}
   .review small{color:var(--muted)}
 
+  /* faq */
   .faq{max-width:780px;margin:0 auto}
   details{border-bottom:1px solid var(--line)}
-  summary{cursor:pointer;list-style:none;padding:24px 4px;font-family:"Cormorant Garamond";font-size:24px;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:20px}
+  summary{cursor:pointer;list-style:none;padding:24px 4px;font-family:"Cormorant Garamond";font-size:25px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:20px}
   summary::-webkit-details-marker{display:none}
   summary::after{content:"+";font-family:"Jost";font-weight:300;font-size:28px;color:var(--purple);transition:transform .25s}
   details[open] summary::after{transform:rotate(45deg)}
   details p{padding:0 4px 24px;color:var(--muted)}
 
-  .signup{background:linear-gradient(120deg,var(--peach),var(--lavender))}
+  .signup{background:linear-gradient(120deg,var(--peach),var(--pink),var(--lavender))}
   .signup form{display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center}
   .signup input{flex:1;min-width:220px;padding:16px 24px;border:1px solid transparent;border-radius:999px;font-size:16px;font-family:inherit;background:var(--white);color:var(--ink)}
-  .signup input:focus{outline:2px solid var(--lilac)}
-  .thanks{margin-top:16px;display:none;font-family:"Cormorant Garamond";font-size:22px;font-style:italic}
+  .signup input:focus{outline:2px solid var(--lavender-mid)}
+  .thanks{margin-top:18px;display:none;font-size:30px}
 
-  footer{background:var(--ink);color:var(--cream);padding:70px 0 30px}
+  footer{background:var(--purple-deep);color:var(--cream);padding:70px 0 30px}
   footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
-  footer .wordmark{color:var(--cream);font-size:24px}
-  footer .tagline{font-family:"Cormorant Garamond";font-style:italic;font-size:20px;margin-top:10px;opacity:.85}
+  footer .axis{color:var(--cream)}
+  footer .vita{color:var(--peach)}
+  footer .tagline{color:var(--lavender);margin-top:12px;font-size:15px}
   footer h5{font-weight:400;font-size:12px;margin-bottom:14px;text-transform:uppercase;letter-spacing:.2em;color:var(--peach)}
   footer ul{list-style:none}
   footer li{margin-bottom:8px}
   footer a{text-decoration:none;opacity:.8}
-  footer a:hover{opacity:1;color:var(--lavender)}
-  .fine{grid-column:1/-1;border-top:1px solid #ffffff22;padding-top:24px;margin-top:24px;font-size:12px;opacity:.6}
+  footer a:hover{opacity:1;color:var(--peach)}
+  .fine{grid-column:1/-1;border-top:1px solid #ffffff22;padding-top:24px;margin-top:24px;font-size:12px;opacity:.65}
 
-  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(160%);background:var(--white);color:var(--purple);padding:14px 26px;border-radius:999px;box-shadow:var(--shadow);transition:transform .35s;z-index:100;font-size:14px;letter-spacing:.04em}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(160%);background:var(--white);color:var(--purple);padding:14px 26px;border-radius:999px;box-shadow:var(--shadow);transition:transform .35s;z-index:100;font-size:14px}
   .toast.show{transform:translateX(-50%) translateY(0)}
 
   @media (max-width:900px){
-    .hero .wrap{grid-template-columns:1fr;text-align:center;padding-top:50px}
-    .hero p{margin-left:auto;margin-right:auto}
+    .hero .wrap,.ritual .wrap,.flavorless .wrap{grid-template-columns:1fr}
+    .hero .wrap{text-align:center;padding-top:44px;gap:70px}
+    .hero p.lede{margin-left:auto;margin-right:auto}
     .hero-btns{justify-content:center}
-    .hero-art{min-height:340px}
-    .halo{width:300px;height:300px}
-    .orbit{width:340px;height:340px}
-    .jar{width:200px}
-    .grid,.steps{grid-template-columns:1fr}
-    .features{grid-template-columns:1fr 1fr}
+    .hero-art{max-width:460px;margin:0 auto}
+    .hero-art .float{left:-10px}
+    .benefits .wrap{padding-top:34px;padding-bottom:34px}
+    .benefit{padding:0 8px}
+    .icon{width:56px;height:56px}
+    .icon svg{width:30px;height:30px}
+    .benefit h3{font-size:11px;letter-spacing:.14em}
+    .benefit p{font-size:13px;line-height:1.45}
+    .featured{grid-template-columns:1fr}
+    .featured .info{padding:30px}
+    .grid{grid-template-columns:1fr 1fr}
     footer .wrap{grid-template-columns:1fr 1fr}
     .links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--cream);flex-direction:column;padding:24px;border-bottom:1px solid var(--line)}
     .links.open{display:flex}
     .menu-btn{display:block}
-    section{padding:80px 0}
+    section{padding:76px 0}
+    .flavorless .text{text-align:center}
+    .flavorless p{margin-left:auto;margin-right:auto}
   }
-  @media (max-width:520px){
-    .features{grid-template-columns:1fr}
-    .link{width:60px}
-    .logo .wordmark{font-size:18px}
+  @media (max-width:560px){
+    .grid{grid-template-columns:1fr}
+    .featured ul{columns:1}
+    .featured h3{font-size:38px}
   }
 </style>
 </head>
 <body>
 
-<!-- Reusable logo mark (redrawn from the AXIS logo) -->
+<!-- Icons + logo mark (reusable) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="split" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#e39a66"/><stop offset=".49" stop-color="#e8a37a"/>
-      <stop offset=".51" stop-color="#7a4cc0"/><stop offset="1" stop-color="#5c2f93"/>
+      <stop offset="0" stop-color="#ef8b62"/><stop offset=".49" stop-color="#f0a079"/>
+      <stop offset=".51" stop-color="#8462c4"/><stop offset="1" stop-color="#6b4aa8"/>
     </linearGradient>
     <symbol id="mark" viewBox="0 0 100 100">
-      <path d="M43 13 A38 38 0 0 0 43 87" fill="none" stroke="#e39a66" stroke-width="2.6" stroke-linecap="round"/>
-      <path d="M57 13 A38 38 0 0 1 57 87" fill="none" stroke="#5c2f93" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M43 13 A38 38 0 0 0 43 87" fill="none" stroke="#ef8b62" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M57 13 A38 38 0 0 1 57 87" fill="none" stroke="#6b4aa8" stroke-width="2.6" stroke-linecap="round"/>
       <path d="M50 2 C51.5 38 53 46 72 50 C53 54 51.5 62 50 98 C48.5 62 47 54 28 50 C47 46 48.5 38 50 2Z" fill="url(#split)"/>
     </symbol>
+    <symbol id="i-gut" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 9h18a5 5 0 0 1 0 10H17a4.5 4.5 0 0 0 0 9h14a4.5 4.5 0 0 1 0 9H21a3 3 0 0 0 0 6h3"/><path d="M15 9a5 5 0 0 0 0 10"/></g></symbol>
+    <symbol id="i-brain" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10v30"/><path d="M24 12c-1-3-6-4-8-1-4-1-7 3-5 6-4 1-5 6-2 9-2 3 0 7 4 7 0 4 5 6 8 4 2 1 3 0 3-1"/><path d="M24 12c1-3 6-4 8-1 4-1 7 3 5 6 4 1 5 6 2 9 2 3 0 7-4 7 0 4-5 6-8 4-2 1-3 0-3-1"/><path d="M17 20c2 0 4 1 4 4M31 20c-2 0-4 1-4 4M15 29c2 1 4 0 5-2M33 29c-2 1-4 0-5-2"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="7"/><path d="M24 7v5M24 36v5M7 24h5M36 24h5M12 12l3.5 3.5M32.5 32.5L36 36M36 12l-3.5 3.5M15.5 32.5L12 36"/></g></symbol>
   </defs>
 </svg>
 
-<div class="announce">✦ Free shipping on orders $35+ · AXIS a brighter mind ✦</div>
+<div class="announce caps">✦ Free shipping on orders $35+ &nbsp;·&nbsp; AXIS a brighter mind ✦</div>
 
 <nav>
   <div class="wrap">
-    <a href="#" class="logo" aria-label="AXIS home"><svg><use href="#mark"/></svg><span class="wordmark">AXIS</span></a>
+    <a href="#" class="logo" aria-label="AXIS Vita home"><svg><use href="#mark"/></svg><span class="axis">AXIS</span><span class="vita">Vita</span></a>
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
     <div class="links">
       <a href="#shop">Shop</a>
-      <a href="#why">The Science</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#ritual">How It Works</a>
       <a href="#faq">FAQ</a>
       <a href="#shop" class="btn">Cart<span class="cart-count" id="cartCount">0</span></a>
     </div>
@@ -217,132 +250,140 @@
 <header class="hero">
   <div class="wrap">
     <div>
-      <div class="kicker">Daily probiotic · Gut-brain support</div>
-      <h1 class="display"><span class="wordmark">AXIS</span>a <em>brighter</em> mind.</h1>
-      <p>Your gut and brain talk all day long. AXIS daily probiotic gummies support that gut-brain axis with 10 billion live cultures, so you feel clearer, calmer, and lighter.</p>
+      <div class="caps">✦ Probiotic Powder</div>
+      <h1><span class="axis">AXIS</span><span class="vita">Vita</span></h1>
+      <div class="tagline">AXIS a brighter mind.</div>
+      <p class="lede">A daily probiotic powder designed to support your gut and brain health, because a healthier you helps you do more of what you love.</p>
       <div class="hero-btns">
-        <a href="#shop" class="btn">Shop AXIS</a>
-        <a href="#why" class="btn alt">The Science</a>
+        <a href="#shop" class="btn">Shop Flavors</a>
+        <a href="#ritual" class="btn alt">How It Works</a>
       </div>
+      <div class="script note">Same great you, just brighter. ♡</div>
     </div>
     <div class="hero-art">
-      <div class="halo"></div>
-      <svg class="orbit" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" opacity=".18"/></svg>
-      <div class="badge"><b>10B</b>live cultures</div>
-      <!-- Swap this SVG for a real product photo: <img class="jar" src="images/jar.png" alt="AXIS jar"> -->
-      <svg class="jar" viewBox="0 0 200 260" aria-label="AXIS probiotic jar">
-        <rect x="48" y="12" width="104" height="38" rx="10" fill="#5c2f93"/>
-        <rect x="30" y="45" width="140" height="200" rx="34" fill="#fffdf9"/>
-        <rect x="30" y="92" width="140" height="110" fill="#f3effc"/>
-        <use href="#mark" x="80" y="100" width="40" height="40"/>
-        <text x="100" y="164" text-anchor="middle" font-family="Tenor Sans" font-size="22" letter-spacing="7" fill="#5c2f93">AXIS</text>
-        <text x="100" y="186" text-anchor="middle" font-family="Jost" font-size="9" letter-spacing="2.5" fill="#7a6c8f">DAILY PROBIOTIC</text>
-      </svg>
+      <span class="script">good things come in small packets ♡</span>
+      <div class="frame"><img src="images/sticks.jpg" alt="AXIS Vita stick packets in mixed berry, orange mango, strawberry lemonade, cucumber lime and peach"></div>
+      <div class="float"><img src="images/variety-box.jpg" alt="AXIS Vita variety pack box"></div>
     </div>
   </div>
 </header>
 
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track" id="marquee"></div>
+<div class="benefits" id="benefits">
+  <div class="wrap">
+    <div class="benefit"><span class="icon"><svg><use href="#i-gut"/></svg></span><h3>Gut Health</h3><p>Supports a healthy digestive system.</p></div>
+    <div class="benefit"><span class="icon"><svg><use href="#i-brain"/></svg></span><h3>Mental Clarity</h3><p>Helps you feel focused and balanced.</p></div>
+    <div class="benefit"><span class="icon"><svg><use href="#i-sun"/></svg></span><h3>Daily Balance</h3><p>Supports overall wellness and immunity.</p></div>
+  </div>
 </div>
 
 <section id="shop">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">The Collection</span>
-      <h2 class="display">Find your <em>flavor</em></h2>
-      <p class="sub">Every gummy is made with clinically studied strains. Vegan, gluten-free, and nothing you can't pronounce.</p>
+    <div class="head">
+      <div class="caps">✦ The Flavors</div>
+      <h2 class="serif">Find your <span class="vita">favorite</span></h2>
+      <p>Five fruity flavors and one flavorless. Every box has 10 single-serve packets.</p>
     </div>
+
+    <div class="featured">
+      <img src="images/sticks.jpg" alt="Five AXIS Vita flavors">
+      <div class="info">
+        <span class="pill">Best place to start</span>
+        <h3 class="serif" style="margin-top:14px">Variety Pack</h3>
+        <ul><li>2 × mixed berry</li><li>2 × orange mango</li><li>2 × strawberry lemonade</li><li>2 × cucumber lime</li><li>2 × peach</li></ul>
+        <div class="price-row" style="padding-top:0;gap:20px;justify-content:flex-start">
+          <span class="price">$29</span><button class="add">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
     <div class="grid" id="products"></div>
   </div>
 </section>
 
-<section class="why" id="why">
+<section class="ritual" id="ritual">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">The Gut-Brain Axis</span>
-      <h2 class="display">Happy gut. <em>Brighter</em> mind.</h2>
-      <p class="sub">Your gut is linked to your brain by the gut-brain axis, and it makes much of your body's serotonin. Look after one and you help the other. That's why we're called AXIS.</p>
-    </div>
-    <div class="axis-diagram" aria-hidden="true">
-      <span class="node gut">Gut</span><span class="link"></span><span class="node brain">Mind</span>
-    </div>
-    <div class="features">
-      <div class="feature"><div class="big grad-text">10B</div><h4>Live Cultures</h4><p>CFU guaranteed through expiration, not just at bottling.</p></div>
-      <div class="feature"><div class="big grad-text">2g</div><h4>Sugar Only</h4><p>Sweetened with real fruit and a little monk fruit.</p></div>
-      <div class="feature"><div class="big grad-text">5</div><h4>Studied Strains</h4><p>Including L. acidophilus &amp; B. lactis for digestion.</p></div>
-      <div class="feature"><div class="big grad-text">0</div><h4>Fridge Needed</h4><p>Shelf-stable. Toss it in your bag and go.</p></div>
+    <div class="photo"><img src="images/pour.jpg" alt="AXIS Vita powder pouring into a glass of water"></div>
+    <div>
+      <div class="head">
+        <div class="caps">✦ The Ritual</div>
+        <h2 class="serif">Small powder. <span class="vita">Big benefits.</span></h2>
+      </div>
+      <ol class="steps">
+        <li><div><h3 class="serif">Tear open</h3><p>One single-serve packet a day. Toss a few in your bag and go.</p></div></li>
+        <li><div><h3 class="serif">Pour in</h3><p>Add it to water or your favorite drink.</p></div></li>
+        <li><div><h3 class="serif">Stir &amp; sip</h3><p>Dissolves quickly and easily. That's it.</p></div></li>
+      </ol>
+      <div class="script" style="font-size:30px;margin-top:22px;transform:rotate(-3deg);display:inline-block">tear open + pour in! ♡</div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="flavorless">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">The Ritual</span>
-      <h2 class="display">Brighter in <em>three</em> steps</h2>
-      <p class="sub">No pills to swallow, no fridge, no fuss.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><h4>Take two</h4><p>Two gummies a day, any time. With your morning coffee, after lunch, or before bed.</p></div>
-      <div class="step"><h4>Feel the shift</h4><p>Most people notice less bloating and smoother digestion within 2–3 weeks.</p></div>
-      <div class="step"><h4>Stay consistent</h4><p>Subscribe &amp; save 20% so you never run out. Pause or cancel anytime.</p></div>
+    <div class="photo"><img src="images/flavorless.jpg" alt="AXIS Vita Flavorless box and packet"></div>
+    <div class="text">
+      <div class="caps" style="color:var(--purple)">✦ Meet Flavorless</div>
+      <div class="script big-script">Same benefits.<br>No flavor.<br>Just you. ♡</div>
+      <p>All the gut health, mental clarity and daily balance, with nothing to change the taste of your coffee, smoothie or water. Clean, minimal, and easy.</p>
+      <a href="#shop" class="btn">Shop Flavorless</a>
     </div>
   </div>
 </section>
 
 <section class="reviews" id="reviews">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Kind Words</span>
-      <h2 class="display">Loved by <em>bright</em> minds</h2>
-      <p class="sub">Placeholder reviews below. Replace them with real customer quotes before you launch.</p>
+    <div class="head">
+      <div class="caps">✦ Kind Words</div>
+      <h2 class="serif">Loved by <span class="vita">bright</span> minds</h2>
+      <p>Placeholder reviews below. Replace them with real customer quotes before you launch.</p>
     </div>
     <div class="grid">
-      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about how good they feel."</p><b>Customer Name</b><small>Verified Buyer</small></div>
-      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about the flavor."</p><b>Customer Name</b><small>Verified Buyer</small></div>
-      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about the subscription."</p><b>Customer Name</b><small>Verified Buyer</small></div>
+      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about how they feel."</p><b>Customer Name</b><small>Verified Buyer</small></div>
+      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about a favorite flavor."</p><b>Customer Name</b><small>Verified Buyer</small></div>
+      <div class="review"><div class="stars">★★★★★</div><p>"Replace with a real customer review about the packets."</p><b>Customer Name</b><small>Verified Buyer</small></div>
     </div>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Questions</span>
-      <h2 class="display">Good to <em>know</em></h2>
+    <div class="head">
+      <div class="caps">✦ Questions</div>
+      <h2 class="serif">Good to <span class="vita">know</span></h2>
     </div>
     <div class="faq">
-      <details><summary>What's a probiotic, anyway?</summary><p>Probiotics are live, beneficial bacteria that help keep your gut microbiome balanced, supporting digestion and overall wellness.</p></details>
-      <details><summary>What is the gut-brain axis?</summary><p>It's the two-way communication line between your digestive system and your brain. A balanced gut is part of feeling your best, body and mind.</p></details>
-      <details><summary>When should I take AXIS?</summary><p>Whenever works best for you. Consistency matters more than timing, so pick a moment you'll remember every day.</p></details>
-      <details><summary>Is it vegan / gluten-free?</summary><p>Yes. AXIS is vegan, gluten-free, dairy-free, and made without artificial colors.</p></details>
-      <details><summary>Can I cancel my subscription?</summary><p>Anytime, no questions asked. Skip, pause, or cancel from your account.</p></details>
+      <details><summary>How do I take AXIS Vita?</summary><p>Tear open one packet, pour it into water or your favorite drink, and stir. It dissolves quickly and easily.</p></details>
+      <details><summary>What is the gut-brain axis?</summary><p>It's the two-way connection between your digestive system and your brain. Caring for your gut is part of feeling your best, body and mind. That's where our name comes from.</p></details>
+      <details><summary>What flavors are there?</summary><p>Orange Mango, Strawberry Lemonade, Mixed Berry, Cucumber Lime, Peach, and Flavorless. Can't choose? Try the Variety Pack.</p></details>
+      <details><summary>What's in each packet?</summary><p>Add your probiotic strains, CFU count, and other ingredients here.</p></details>
+      <details><summary>How many packets come in a box?</summary><p>Every box has 10 single-serve packets (0.28 oz / 8 g each).</p></details>
     </div>
   </div>
 </section>
 
-<section class="signup center">
+<section class="signup" style="text-align:center">
   <div class="wrap">
-    <span class="eyebrow">Stay Bright</span>
-    <h2 class="display">Join the <em>bright</em> side</h2>
-    <p class="sub">Get 15% off your first order, plus gut-brain tips worth reading.</p>
+    <div class="head" style="margin-bottom:30px">
+      <div class="caps">✦ Stay Bright</div>
+      <h2 class="serif">Join the <span class="vita">bright</span> side</h2>
+      <p>Get 15% off your first box, plus gut-brain tips worth reading.</p>
+    </div>
     <form id="signupForm">
       <input type="email" placeholder="your@email.com" required aria-label="Email">
       <button class="btn" type="submit">Sign Me Up</button>
     </form>
-    <p class="thanks" id="thanks">You're in. Check your inbox for your code.</p>
+    <p class="script thanks" id="thanks">You're in! Check your inbox ♡</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div>
-      <a href="#" class="logo" aria-label="AXIS home"><svg><use href="#mark"/></svg><span class="wordmark">AXIS</span></a>
+      <a href="#" class="logo" aria-label="AXIS Vita home"><svg><use href="#mark"/></svg><span class="axis">AXIS</span><span class="vita">Vita</span></a>
       <p class="tagline">AXIS a brighter mind.</p>
     </div>
-    <div><h5>Shop</h5><ul><li><a href="#shop">All Products</a></li><li><a href="#shop">Bundles</a></li><li><a href="#shop">Subscribe</a></li></ul></div>
-    <div><h5>Info</h5><ul><li><a href="#why">The Science</a></li><li><a href="#faq">FAQ</a></li><li><a href="mailto:hello@example.com">Contact</a></li></ul></div>
+    <div><h5>Shop</h5><ul><li><a href="#shop">All Flavors</a></li><li><a href="#shop">Variety Pack</a></li><li><a href="#shop">Flavorless</a></li></ul></div>
+    <div><h5>Info</h5><ul><li><a href="#benefits">Benefits</a></li><li><a href="#faq">FAQ</a></li><li><a href="mailto:hello@example.com">Contact</a></li></ul></div>
     <div><h5>Follow</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
     <p class="fine">© <span id="yr"></span> AXIS. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
   </div>
@@ -353,25 +394,24 @@
 <script>
   // ===== EDIT YOUR PRODUCTS HERE =====
   const products = [
-    { name: "Berry Bliss",    desc: "Mixed berry gummies for everyday gut balance.",  price: 29, bg: "#fbe3ea", band: "#f6c9d6", tag: "Bestseller" },
-    { name: "Mango Glow",     desc: "Tropical mango with a prebiotic fiber boost.",   price: 29, bg: "#fcefe4", band: "#f9dfcc", tag: "New" },
-    { name: "Lavender Calm",  desc: "Soft lavender-lemon for calm, clear evenings.",  price: 32, bg: "#f3effc", band: "#e6defa", tag: "Fan Favorite" },
+    { name: "Orange Mango",        note: "sunny & sweet",     img: "images/orange-mango.jpg",        price: 29 },
+    { name: "Strawberry Lemonade", note: "bright & zesty",    img: "images/strawberry-lemonade.jpg", price: 29 },
+    { name: "Mixed Berry",         note: "juicy & bold",      img: "images/mixed-berry.jpg",         price: 29 },
+    { name: "Cucumber Lime",       note: "cool & crisp",      img: "images/cucumber-lime.jpg",       price: 29 },
+    { name: "Peach",               note: "soft & dreamy",     img: "images/peach.jpg",               price: 29 },
+    { name: "Flavorless",          note: "just you",          img: "images/flavorless.jpg",          price: 29 },
   ];
-  const marqueeWords = ["AXIS a brighter mind", "Gut-brain support", "10 billion CFU", "Vegan", "Shelf-stable", "Think brighter"];
-
-  const jar = (bg, band) => `<svg class="mini-jar" viewBox="0 0 200 260"><rect x="48" y="12" width="104" height="38" rx="10" fill="#5c2f93"/><rect x="30" y="45" width="140" height="200" rx="34" fill="#fffdf9"/><rect x="30" y="92" width="140" height="110" fill="${band}"/><use href="#mark" x="80" y="100" width="40" height="40"/><text x="100" y="166" text-anchor="middle" font-family="Tenor Sans" font-size="22" letter-spacing="7" fill="#5c2f93">AXIS</text></svg>`;
 
   document.getElementById("products").innerHTML = products.map(p => `
     <div class="card">
-      <div class="card-top" style="background:${p.bg}"><span class="tag">${p.tag}</span>${jar(p.bg, p.band)}</div>
+      <div class="photo"><img src="${p.img}" alt="AXIS Vita ${p.name} box and packet" loading="lazy"></div>
       <div class="card-body">
-        <h3>${p.name}</h3><p>${p.desc}</p>
+        <h3 class="serif">${p.name}</h3>
+        <span class="script">${p.note} ♡</span>
+        <small>Probiotic powder · 10 single-serve packets</small>
         <div class="price-row"><span class="price">$${p.price}</span><button class="add">Add to Cart</button></div>
       </div>
     </div>`).join("");
-
-  const m = marqueeWords.map(w => `<span>${w}</span><span class="star">✦</span>`).join("");
-  document.getElementById("marquee").innerHTML = m + m;
 
   let count = 0;
   const toast = document.getElementById("toast");
