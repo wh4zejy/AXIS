@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AXIS Vita · AXIS a brighter mind</title>
-<meta name="description" content="AXIS Vita probiotic powder. Gut health, mental clarity, daily balance. 10 single-serve packets in five flavors plus flavorless.">
+<meta name="description" content="AXIS Vita probiotic powder. Gut health, mental clarity, daily balance. Five flavors plus flavorless, in 16-packs ($48) or 96-packs ($120).">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,6 +122,13 @@
   .price{font-family:"Cormorant Garamond";font-size:28px;font-weight:600;color:var(--purple)}
   .add{background:var(--lavender);color:var(--purple);border:0;border-radius:999px;padding:11px 20px;cursor:pointer;font-family:inherit;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:all .2s}
   .add:hover{background:var(--purple);color:var(--white)}
+  .sizes{display:flex;gap:8px;margin-top:16px}
+  .size{flex:1;position:relative;background:var(--white);border:1px solid var(--lavender-mid);color:var(--ink);border-radius:14px;padding:10px 8px;font-family:inherit;font-size:14px;cursor:pointer;transition:all .2s}
+  .size:hover{border-color:var(--purple)}
+  .size.active{border-color:var(--purple);background:var(--lavender);color:var(--purple);font-weight:500}
+  .size em{position:absolute;top:-9px;right:8px;background:var(--coral);color:var(--white);font-style:normal;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+  .per{display:block;color:var(--muted);font-size:13px;line-height:1.2}
+  .add{white-space:nowrap}
 
   /* ritual */
   .ritual{background:linear-gradient(180deg,var(--cream),var(--lavender))}
@@ -281,7 +288,7 @@
     <div class="head">
       <div class="caps">✦ The Flavors</div>
       <h2 class="serif">Find your <span class="vita">favorite</span></h2>
-      <p>Five fruity flavors and one flavorless. Every box has 10 single-serve packets.</p>
+      <p>Five fruity flavors and one flavorless. Available in 16-pack for $48.00 or 96-pack for $120.00.</p>
     </div>
 
     <div class="featured">
@@ -289,9 +296,11 @@
       <div class="info">
         <span class="pill">Best place to start</span>
         <h3 class="serif" style="margin-top:14px">Variety Pack</h3>
-        <ul><li>2 × mixed berry</li><li>2 × orange mango</li><li>2 × strawberry lemonade</li><li>2 × cucumber lime</li><li>2 × peach</li></ul>
-        <div class="price-row" style="padding-top:0;gap:20px;justify-content:flex-start">
-          <span class="price">$29</span><button class="add">Add to Cart</button>
+        <p style="margin-top:14px;color:var(--muted)">A mix of all five flavors:</p>
+        <ul style="margin-top:8px"><li>mixed berry</li><li>orange mango</li><li>strawberry lemonade</li><li>cucumber lime</li><li>peach</li></ul>
+        <div class="buy" data-name="Variety Pack">
+          <div class="sizes"></div>
+          <div class="price-row" style="padding-top:14px"><span><span class="price"></span> <small class="per"></small></span><button class="add">Add to Cart</button></div>
         </div>
       </div>
     </div>
@@ -356,7 +365,7 @@
       <details><summary>What is the gut-brain axis?</summary><p>It's the two-way connection between your digestive system and your brain. Caring for your gut is part of feeling your best, body and mind. That's where our name comes from.</p></details>
       <details><summary>What flavors are there?</summary><p>Orange Mango, Strawberry Lemonade, Mixed Berry, Cucumber Lime, Peach, and Flavorless. Can't choose? Try the Variety Pack.</p></details>
       <details><summary>What's in each packet?</summary><p>Add your probiotic strains, CFU count, and other ingredients here.</p></details>
-      <details><summary>How many packets come in a box?</summary><p>Every box has 10 single-serve packets (0.28 oz / 8 g each).</p></details>
+      <details><summary>What sizes can I buy?</summary><p>Every flavor is available in a 16-pack for $48.00 or a 96-pack for $120.00. The 96-pack works out to $1.25 a packet, our best value. Each single-serve packet is 0.28 oz (8 g).</p></details>
     </div>
   </div>
 </section>
@@ -394,12 +403,18 @@
 <script>
   // ===== EDIT YOUR PRODUCTS HERE =====
   const products = [
-    { name: "Orange Mango",        note: "sunny & sweet",     img: "images/orange-mango.jpg",        price: 29 },
-    { name: "Strawberry Lemonade", note: "bright & zesty",    img: "images/strawberry-lemonade.jpg", price: 29 },
-    { name: "Mixed Berry",         note: "juicy & bold",      img: "images/mixed-berry.jpg",         price: 29 },
-    { name: "Cucumber Lime",       note: "cool & crisp",      img: "images/cucumber-lime.jpg",       price: 29 },
-    { name: "Peach",               note: "soft & dreamy",     img: "images/peach.jpg",               price: 29 },
-    { name: "Flavorless",          note: "just you",          img: "images/flavorless.jpg",          price: 29 },
+    { name: "Orange Mango",        note: "sunny & sweet",  img: "images/orange-mango.jpg" },
+    { name: "Strawberry Lemonade", note: "bright & zesty", img: "images/strawberry-lemonade.jpg" },
+    { name: "Mixed Berry",         note: "juicy & bold",   img: "images/mixed-berry.jpg" },
+    { name: "Cucumber Lime",       note: "cool & crisp",   img: "images/cucumber-lime.jpg" },
+    { name: "Peach",               note: "soft & dreamy",  img: "images/peach.jpg" },
+    { name: "Flavorless",          note: "just you",       img: "images/flavorless.jpg" },
+  ];
+
+  // ===== EDIT PACK SIZES & PRICES HERE (applies to every flavor + Variety Pack) =====
+  const sizes = [
+    { label: "16-pack", packets: 16, price: 48 },
+    { label: "96-pack", packets: 96, price: 120, badge: "Best value" },
   ];
 
   document.getElementById("products").innerHTML = products.map(p => `
@@ -408,17 +423,39 @@
       <div class="card-body">
         <h3 class="serif">${p.name}</h3>
         <span class="script">${p.note} ♡</span>
-        <small>Probiotic powder · 10 single-serve packets</small>
-        <div class="price-row"><span class="price">$${p.price}</span><button class="add">Add to Cart</button></div>
+        <small>Available in 16-pack for $48.00 or 96-pack for $120.00.</small>
+        <div class="buy" data-name="${p.name}">
+          <div class="sizes"></div>
+          <div class="price-row"><span><span class="price"></span> <small class="per"></small></span><button class="add">Add to Cart</button></div>
+        </div>
       </div>
     </div>`).join("");
+
+  // size picker on every product
+  const money = n => "$" + n.toFixed(2);
+  document.querySelectorAll(".buy").forEach(buy => {
+    const box = buy.querySelector(".sizes");
+    box.innerHTML = sizes.map((s, i) =>
+      `<button type="button" class="size${i === 0 ? " active" : ""}" data-i="${i}">${s.label}${s.badge ? `<em>${s.badge}</em>` : ""}</button>`).join("");
+    const show = i => {
+      const s = sizes[i];
+      buy.dataset.size = i;
+      buy.querySelector(".price").textContent = money(s.price);
+      buy.querySelector(".per").textContent = money(s.price / s.packets) + " / packet";
+      box.querySelectorAll(".size").forEach(b => b.classList.toggle("active", +b.dataset.i === i));
+    };
+    box.addEventListener("click", e => { const b = e.target.closest(".size"); if (b) show(+b.dataset.i); });
+    show(0);
+  });
 
   let count = 0;
   const toast = document.getElementById("toast");
   document.querySelectorAll(".add").forEach(b => b.addEventListener("click", () => {
+    const buy = b.closest(".buy");
     document.getElementById("cartCount").textContent = ++count;
+    toast.textContent = `✦ ${buy.dataset.name} (${sizes[buy.dataset.size].label}) added to cart`;
     toast.classList.add("show");
-    setTimeout(() => toast.classList.remove("show"), 1600);
+    setTimeout(() => toast.classList.remove("show"), 1800);
   }));
 
   document.getElementById("signupForm").addEventListener("submit", e => {
